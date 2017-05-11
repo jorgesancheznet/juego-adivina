@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var numero, n;
+    do {
+        numero = parseInt(Math.random() * 1000) + 1;
+        do {
+            n = prompt("¿Qué número del 1 al 1000 crees que he pensado?");
+            if (numero > n) {
+                alert("Mi numero es mayor")
+            }
+            else if (numero < n) {
+                alert("Mi numero es menor")
+            }
+        } while (n != numero);
+        alert("¡Acertaste!");
+    }while(confirm("¿Quieres jugar de nuevo?"));
+    document.write("<h1>Gracias por jugar</h1>");
+</script>
+</body>
+</html>
